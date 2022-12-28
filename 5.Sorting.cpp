@@ -43,9 +43,25 @@ template<class T> void sorting<T>:: Selection_sort()
     }
 }
 int main()
-{
-    sorting <int> s1;
-    s1.Insert_array();
-    s1.Selection_sort();
+{   int ch;
+    cout<<"1.Interger Array\n2.Float Array";
+    cin>>ch;
+    switch(ch)
+    {
+    case 1:
+        sorting <int> s1;
+        s1.Insert_array();
+        s1.Selection_sort();
+        break;
+    case 2:
+        sorting <float> s2;
+
+        s2.Insert_array();
+        s2.Selection_sort();
+        break;
+
+    }
+
+
     return 0;
 }
